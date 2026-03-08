@@ -1,0 +1,241 @@
+{
+  "390011": {
+    "name": "HumbleSwap: wVOI/GM Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [390001, 300279],
+    "description": "Constant-product AMM pool for wVOI and GM tokens"
+  },
+  "395510": {
+    "name": "HumbleSwap: F/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [302222, 390001],
+    "description": "Constant-product AMM pool for Founder Token and wVOI"
+  },
+  "395553": {
+    "name": "HumbleSwap: aUSDC/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [395614, 390001],
+    "description": "Constant-product AMM pool for aUSDC and wVOI"
+  },
+  "395554": {
+    "name": "HumbleSwap: GM/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [300279, 390001],
+    "description": "Constant-product AMM pool for GM and wVOI"
+  },
+  "395555": {
+    "name": "HumbleSwap: GM/wVOI Pool (alt)",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [300279, 390001],
+    "description": "Alternative constant-product AMM pool for GM and wVOI"
+  },
+  "395509": {
+    "name": "HumbleSwap: ROCKET/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [401384, 390001],
+    "description": "Constant-product AMM pool for Rocketcoin and wVOI"
+  },
+  "404246": {
+    "name": "HumbleSwap: cool/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [404004, 390001],
+    "description": "Constant-product AMM pool for cool and wVOI"
+  },
+  "429999": {
+    "name": "HumbleSwap: UNIT/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [420069, 390001],
+    "description": "Constant-product AMM pool for UNIT and wVOI"
+  },
+  "441951": {
+    "name": "HumbleSwap: CORN/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [412682, 390001],
+    "description": "Constant-product AMM pool for Corn coin and wVOI"
+  },
+  "723598": {
+    "name": "HumbleSwap: IAT/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [420024, 390001],
+    "description": "Constant-product AMM pool for IceAge Token and wVOI"
+  },
+  "946307": {
+    "name": "HumbleSwap: SHELLY/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [410111, 390001],
+    "description": "Constant-product AMM pool for Shelly Token and wVOI"
+  },
+  "8357620": {
+    "name": "HumbleSwap: PIX/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [410419, 390001],
+    "description": "Constant-product AMM pool for PiX Token and wVOI"
+  },
+  "39923889": {
+    "name": "HumbleSwap: wVOI/AMMO Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [390001, 798968],
+    "description": "Constant-product AMM pool for wVOI and Voi Army"
+  },
+  "40120385": {
+    "name": "HumbleSwap: POW/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [40153155, 390001],
+    "description": "Constant-product AMM pool for Power token and wVOI"
+  },
+  "40171094": {
+    "name": "HumbleSwap: SHELLY/POW Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [410111, 40153155],
+    "description": "Constant-product AMM pool for Shelly Token and Power"
+  },
+  "40242995": {
+    "name": "HumbleSwap: wVOI/NODE Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [390001, 410811],
+    "description": "Constant-product AMM pool for wVOI and Node Rewards"
+  },
+  "47165327": {
+    "name": "HumbleSwap: WAD/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [47138068, 390001],
+    "description": "Constant-product AMM pool for Whale Asset Dollar and wVOI"
+  },
+  "47386136": {
+    "name": "HumbleSwap: INDEX/wVOI Pool",
+    "protocol": "humble-swap",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [41403352, 390001],
+    "description": "Constant-product AMM pool for INDEX token and wVOI"
+  },
+  "411756": {
+    "name": "Nomadex: VOI/aUSDC Pool",
+    "protocol": "nomadex",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [0, 395614],
+    "description": "Nomadex AMM pool for native VOI and aUSDC"
+  },
+  "429995": {
+    "name": "Nomadex: VOI/UNIT Pool",
+    "protocol": "nomadex",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [0, 420069],
+    "description": "Nomadex AMM pool for native VOI and UNIT"
+  },
+  "8345343": {
+    "name": "Nomadex: VOI/PIX Pool",
+    "protocol": "nomadex",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [0, 410419],
+    "description": "Nomadex AMM pool for native VOI and PiX Token"
+  },
+  "41258832": {
+    "name": "Nomadex: VOI/INDEX Pool",
+    "protocol": "nomadex",
+    "type": "amm-pool",
+    "role": "liquidity-pool",
+    "tokens": [0, 41403352],
+    "description": "Nomadex AMM pool for native VOI and INDEX"
+  },
+  "797609": {
+    "name": "enVoi: Name Registry",
+    "protocol": "envoi",
+    "type": "name-registry",
+    "role": "registry",
+    "description": "Core enVoi name registry contract managing .voi name registrations and metadata"
+  },
+  "395609": {
+    "name": "Aramid Bridge: Voi Gateway",
+    "protocol": "aramid-bridge",
+    "type": "bridge-gateway",
+    "role": "bridge",
+    "description": "Aramid Bridge gateway contract on Voi for cross-chain asset transfers"
+  },
+  "390001": {
+    "name": "Wrapped VOI (wVOI)",
+    "protocol": "humble-swap",
+    "type": "arc200-token",
+    "role": "token-contract",
+    "description": "ARC-200 wrapped VOI token contract used for DEX compatibility"
+  },
+  "395614": {
+    "name": "Aramid USDC (aUSDC)",
+    "protocol": "aramid-bridge",
+    "type": "arc200-token",
+    "role": "token-contract",
+    "description": "ARC-200 bridged USDC token via Aramid Bridge"
+  },
+  "413153": {
+    "name": "Aramid ALGO (aAlgo)",
+    "protocol": "aramid-bridge",
+    "type": "arc200-token",
+    "role": "token-contract",
+    "description": "ARC-200 bridged ALGO token via Aramid Bridge"
+  },
+  "40153308": {
+    "name": "Aramid ETH (aETH)",
+    "protocol": "aramid-bridge",
+    "type": "arc200-token",
+    "role": "token-contract",
+    "description": "ARC-200 bridged ETH token via Aramid Bridge"
+  },
+  "40153368": {
+    "name": "Aramid BTC (aBTC)",
+    "protocol": "aramid-bridge",
+    "type": "arc200-token",
+    "role": "token-contract",
+    "description": "ARC-200 bridged BTC token via Aramid Bridge"
+  },
+  "40153415": {
+    "name": "Aramid cbBTC (acbBTC)",
+    "protocol": "aramid-bridge",
+    "type": "arc200-token",
+    "role": "token-contract",
+    "description": "ARC-200 bridged Coinbase BTC token via Aramid Bridge"
+  },
+  "40153155": {
+    "name": "Power (POW)",
+    "protocol": "voi-network",
+    "type": "arc200-token",
+    "role": "token-contract",
+    "description": "Power token on Voi - ARC-200 token used across the ecosystem"
+  }
+}

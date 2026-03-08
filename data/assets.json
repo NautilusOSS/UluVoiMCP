@@ -1,0 +1,322 @@
+{
+  "0": {
+    "name": "Voi",
+    "symbol": "VOI",
+    "decimals": 6,
+    "type": "native",
+    "protocol": "voi-network",
+    "category": "native",
+    "description": "Native token of the Voi blockchain",
+    "verified": true
+  },
+  "390001": {
+    "name": "Wrapped Voi",
+    "symbol": "wVOI",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": "humble-swap",
+    "category": "wrapped-native",
+    "description": "ARC-200 wrapped VOI used for DEX trading on HumbleSwap",
+    "verified": true
+  },
+  "395614": {
+    "name": "Aramid USDC",
+    "symbol": "aUSDC",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": "aramid-bridge",
+    "category": "bridged-stablecoin",
+    "description": "USDC bridged from Algorand via Aramid Bridge",
+    "verified": true
+  },
+  "413153": {
+    "name": "Aramid ALGO",
+    "symbol": "aAlgo",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": "aramid-bridge",
+    "category": "bridged-token",
+    "description": "ALGO bridged from Algorand via Aramid Bridge",
+    "verified": true
+  },
+  "40153308": {
+    "name": "Aramid ETH",
+    "symbol": "aETH",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": "aramid-bridge",
+    "category": "bridged-token",
+    "description": "ETH bridged via Aramid Bridge",
+    "verified": true
+  },
+  "40153368": {
+    "name": "Aramid BTC",
+    "symbol": "aBTC",
+    "decimals": 8,
+    "type": "arc200",
+    "protocol": "aramid-bridge",
+    "category": "bridged-token",
+    "description": "BTC bridged via Aramid Bridge",
+    "verified": true
+  },
+  "40153415": {
+    "name": "Aramid cbBTC",
+    "symbol": "acbBTC",
+    "decimals": 8,
+    "type": "arc200",
+    "protocol": "aramid-bridge",
+    "category": "bridged-token",
+    "description": "Coinbase BTC bridged via Aramid Bridge",
+    "verified": true
+  },
+  "300279": {
+    "name": "Good Morning",
+    "symbol": "GM",
+    "decimals": 2,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Community token on Voi - GM culture",
+    "verified": true
+  },
+  "302222": {
+    "name": "Voi Founder Token",
+    "symbol": "F",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": "voi-network",
+    "category": "governance",
+    "description": "Voi Founder Token representing early network participation",
+    "verified": true
+  },
+  "420069": {
+    "name": "UNIT",
+    "symbol": "UNIT",
+    "decimals": 8,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Community token on Voi",
+    "verified": true
+  },
+  "410111": {
+    "name": "Shelly Token",
+    "symbol": "SHELLY",
+    "decimals": 8,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Community token on Voi",
+    "verified": true
+  },
+  "410419": {
+    "name": "PiX Token",
+    "symbol": "PIX",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "PiX community token on Voi",
+    "verified": true
+  },
+  "412682": {
+    "name": "Corn coin",
+    "symbol": "CORN",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Community token on Voi",
+    "verified": true
+  },
+  "420024": {
+    "name": "IceAge Token",
+    "symbol": "IAT",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "IceAge community token on Voi",
+    "verified": true
+  },
+  "401384": {
+    "name": "Rocketcoin",
+    "symbol": "ROCKET",
+    "decimals": 18,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Rocketcoin community token on Voi",
+    "verified": true
+  },
+  "404004": {
+    "name": "cool",
+    "symbol": "cool",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "cool community token on Voi",
+    "verified": false
+  },
+  "798968": {
+    "name": "Voi Army",
+    "symbol": "AMMO",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Voi Army community token",
+    "verified": true
+  },
+  "410811": {
+    "name": "Node Rewards",
+    "symbol": "NODE",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Node Rewards token on Voi",
+    "verified": true
+  },
+  "419744": {
+    "name": "Buidl Token",
+    "symbol": "BUIDL",
+    "decimals": 8,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Buidl community token on Voi",
+    "verified": true
+  },
+  "419714": {
+    "name": "Pixel Dust",
+    "symbol": "PXD",
+    "decimals": 8,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Pixel Dust community token on Voi",
+    "verified": false
+  },
+  "859312": {
+    "name": "Vote Coin",
+    "symbol": "VOTE",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "governance",
+    "description": "Vote Coin for governance on Voi",
+    "verified": false
+  },
+  "859317": {
+    "name": "DeFi-nite",
+    "symbol": "Finite",
+    "decimals": 8,
+    "type": "arc200",
+    "protocol": null,
+    "category": "defi",
+    "description": "DeFi-nite token on Voi",
+    "verified": false
+  },
+  "40153155": {
+    "name": "Power",
+    "symbol": "POW",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": "voi-network",
+    "category": "ecosystem",
+    "description": "Power token used across the Voi ecosystem",
+    "verified": true
+  },
+  "416000": {
+    "name": "vBUX",
+    "symbol": "VBUX",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "vBUX token on Voi",
+    "verified": false
+  },
+  "411311": {
+    "name": "Groover Token",
+    "symbol": "GROOVE",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Groover community token on Voi",
+    "verified": false
+  },
+  "799127": {
+    "name": "Into The Voi",
+    "symbol": "IV",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Into The Voi community token",
+    "verified": false
+  },
+  "40279312": {
+    "name": "Panda Chain",
+    "symbol": "PANDA",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Panda Chain token on Voi",
+    "verified": false
+  },
+  "40279288": {
+    "name": "Turtle Bucks",
+    "symbol": "TURTLE",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "Turtle Bucks community token on Voi",
+    "verified": true
+  },
+  "47138068": {
+    "name": "Whale Asset Dollar",
+    "symbol": "WAD",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "stablecoin",
+    "description": "Whale Asset Dollar stablecoin on Voi",
+    "verified": true
+  },
+  "41403352": {
+    "name": "INDEX",
+    "symbol": "INDEX",
+    "decimals": 9,
+    "type": "arc200",
+    "protocol": null,
+    "category": "index",
+    "description": "INDEX token on Voi",
+    "verified": true
+  },
+  "419385": {
+    "name": "VoiFrens",
+    "symbol": "FREN",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "VoiFrens community token",
+    "verified": false
+  },
+  "798948": {
+    "name": "GsAlfa",
+    "symbol": "GSALFA",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "community-token",
+    "description": "GsAlfa token on Voi",
+    "verified": false
+  }
+}

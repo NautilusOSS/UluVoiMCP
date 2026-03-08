@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "source": "static-registry",
+    "note": "Well-known enVoi names. For live resolution, use UluCoreMCP or enVoi directly.",
+    "tlds": [".voi", ".wallet.voi", ".founder.voi"]
+  },
+  "names": {
+    "shelly.voi": {
+      "description": "Shelly - Voi ecosystem builder"
+    },
+    "humble.voi": {
+      "description": "HumbleSwap DEX protocol"
+    },
+    "nautilus.voi": {
+      "description": "Nautilus NFT marketplace"
+    }
+  }
+}

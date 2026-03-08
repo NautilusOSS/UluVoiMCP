@@ -1,0 +1,87 @@
+[
+  {
+    "id": "humble-swap",
+    "name": "HumbleSwap",
+    "type": "dex",
+    "description": "Decentralized exchange on Voi using constant-product AMM pools. Supports ARC-200 token swaps with automated liquidity provision.",
+    "website": "https://humbleswap.com",
+    "tags": ["defi", "amm", "swap", "liquidity"],
+    "contracts": {
+      "factory": null,
+      "pools": [390011, 395510, 395555, 395554, 395553, 395509, 404246, 404243, 404242, 413161, 429999, 440993, 440986, 441951, 441950, 441949, 443620, 443619, 443610, 612174, 612230, 612229, 723598, 723412, 723381, 723225, 749605, 749608, 795760, 859357, 859600, 859599, 946307, 946308, 8357620, 8357619, 8364793, 8364819, 8364792, 8490043, 8490044, 39923889, 39923888, 39930877, 39930878, 39939989, 39939988, 40008786, 40008784, 40021386, 40021385, 40021384, 40061265, 40061264, 40062888, 40062887, 40062886, 40062885, 40120381, 40120385, 40170008, 40171094, 40171092, 40171091, 40171090, 40171088, 40173676, 40173677, 40173675, 40173674, 40173672, 40173669, 40180064, 40180063, 40180061, 40180060, 40180059, 40242999, 40242995, 40242993, 40242984, 40284043, 40284077, 40284079, 40284118, 40284117, 40355573, 40375064, 40375236, 40377481, 40377348, 40377149, 40377003, 40376815, 40376434, 40376359, 40397326, 40396986, 40396925, 40376245, 40375944, 40375363, 40375343, 40375342, 41281386, 41284626, 45506199, 47165327, 47175110, 47175149, 47177587, 47196468, 47386136, 47386638, 47386831, 47410064, 47424826, 47512668, 48411989]
+    }
+  },
+  {
+    "id": "nomadex",
+    "name": "Nomadex",
+    "type": "dex",
+    "description": "Decentralized exchange on Voi supporting native VOI swaps directly without wrapping. Uses constant-product AMM model.",
+    "website": "https://nomadex.app",
+    "tags": ["defi", "amm", "swap", "liquidity"],
+    "contracts": {
+      "pools": [411756, 429995, 8357709, 8345343, 671700, 41258832, 41267520, 47165570, 47166025, 41284273]
+    }
+  },
+  {
+    "id": "snowball-swap",
+    "name": "SnowballSwap",
+    "type": "dex-aggregator",
+    "description": "DEX aggregator for Voi that routes swaps across HumbleSwap and Nomadex pools for optimal pricing. Supports multi-hop routing.",
+    "website": "https://snowballswap.xyz",
+    "tags": ["defi", "aggregator", "swap", "routing"]
+  },
+  {
+    "id": "envoi",
+    "name": "enVoi",
+    "type": "naming-service",
+    "description": "Decentralized naming service for Voi. Maps human-readable .voi names to wallet addresses with profile metadata (bio, avatar, social links).",
+    "website": "https://envoi.sh",
+    "tags": ["identity", "naming", "social"],
+    "contracts": {
+      "registry": [797609]
+    }
+  },
+  {
+    "id": "nautilus",
+    "name": "Nautilus",
+    "type": "nft-marketplace",
+    "description": "NFT marketplace and asset verification platform on Voi. Supports ARC-72 NFT listings, sales, and collection management.",
+    "website": "https://nautilus.sh",
+    "tags": ["nft", "marketplace", "collectibles"]
+  },
+  {
+    "id": "highforge",
+    "name": "HighForge",
+    "type": "nft-platform",
+    "description": "NFT minting and creation platform on Voi. Enables artists and creators to mint ARC-72 NFT collections.",
+    "website": "https://highforge.io",
+    "tags": ["nft", "minting", "creation"]
+  },
+  {
+    "id": "aramid-bridge",
+    "name": "Aramid Bridge",
+    "type": "bridge",
+    "description": "Cross-chain bridge connecting Voi to Algorand and other AVM/EVM networks. Enables bridging of native tokens and ASAs between chains.",
+    "website": "https://aramid.finance",
+    "tags": ["bridge", "cross-chain", "interoperability"],
+    "contracts": {
+      "bridge": [395609]
+    }
+  },
+  {
+    "id": "kibisis",
+    "name": "Kibisis",
+    "type": "wallet",
+    "description": "Browser extension wallet for Voi and Algorand. Supports ARC-200 tokens, ARC-72 NFTs, and WalletConnect.",
+    "website": "https://kibis.is",
+    "tags": ["wallet", "browser-extension"]
+  },
+  {
+    "id": "voi-network",
+    "name": "Voi Network",
+    "type": "l1-blockchain",
+    "description": "Layer 1 AVM-compatible blockchain focused on community ownership and fair token distribution. Uses proof-of-stake consensus.",
+    "website": "https://voi.network",
+    "tags": ["blockchain", "l1", "avm", "proof-of-stake"]
+  }
+]
