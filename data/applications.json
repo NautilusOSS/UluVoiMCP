@@ -237,5 +237,215 @@
     "type": "arc200-token",
     "role": "token-contract",
     "description": "Power token on Voi - ARC-200 token used across the ecosystem"
+  },
+  "47138065": {
+    "name": "DorkFi: Price Oracle",
+    "protocol": "dorkfi",
+    "type": "oracle",
+    "role": "oracle",
+    "description": "DorkFi price oracle providing collateral and asset price feeds for lending pool calculations"
+  },
+  "47139778": {
+    "name": "DorkFi: Lending Pool (Main)",
+    "protocol": "dorkfi",
+    "type": "lending-pool",
+    "role": "lending-pool",
+    "description": "DorkFi main lending pool supporting VOI, aUSDC, UNIT, POW, aALGO, aETH, aBTC, acbBTC, and WAD (borrow-only)"
+  },
+  "47139781": {
+    "name": "DorkFi: Lending Pool (Community)",
+    "protocol": "dorkfi",
+    "type": "lending-pool",
+    "role": "lending-pool",
+    "description": "DorkFi community lending pool supporting WAD, GM, CORN, SHELLY, BUIDL, F, NODE, AMMO, IAT, bVOI, NV, EV, FV"
+  },
+  "47139789": {
+    "name": "DorkFi: nVOI Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited VOI in DorkFi main pool"
+  },
+  "47140315": {
+    "name": "DorkFi: naUSDC Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited aUSDC in DorkFi main pool"
+  },
+  "47148525": {
+    "name": "DorkFi: nUNIT Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited UNIT in DorkFi main pool"
+  },
+  "47410637": {
+    "name": "DorkFi: nPOW Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited POW in DorkFi main pool"
+  },
+  "47475308": {
+    "name": "DorkFi: naALGO Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited aALGO in DorkFi main pool"
+  },
+  "47482429": {
+    "name": "DorkFi: naETH Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited aETH in DorkFi main pool"
+  },
+  "48168253": {
+    "name": "DorkFi: naBTC Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited aBTC in DorkFi main pool"
+  },
+  "48168565": {
+    "name": "DorkFi: nacbBTC Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited acbBTC in DorkFi main pool"
+  },
+  "47155328": {
+    "name": "DorkFi: nWAD Receipt Token (Main Pool)",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing WAD in DorkFi main pool (borrow-only)"
+  },
+  "47469357": {
+    "name": "DorkFi: nWAD Receipt Token (Community Pool)",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited WAD in DorkFi community pool"
+  },
+  "47467486": {
+    "name": "DorkFi: nGM Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited GM in DorkFi community pool"
+  },
+  "47475083": {
+    "name": "DorkFi: nCORN Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited CORN in DorkFi community pool"
+  },
+  "48169022": {
+    "name": "DorkFi: nSHELLY Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited SHELLY in DorkFi community pool"
+  },
+  "48174565": {
+    "name": "DorkFi: nBUIDL Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited BUIDL in DorkFi community pool"
+  },
+  "48174629": {
+    "name": "DorkFi: nF Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited Founder Token in DorkFi community pool"
+  },
+  "48174745": {
+    "name": "DorkFi: nNODE Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited NODE in DorkFi community pool"
+  },
+  "48174796": {
+    "name": "DorkFi: nAMMO Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited AMMO in DorkFi community pool"
+  },
+  "48174826": {
+    "name": "DorkFi: nIAT Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited IAT in DorkFi community pool"
+  },
+  "48174861": {
+    "name": "DorkFi: nbVOI Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited bVOI in DorkFi community pool"
+  },
+  "48174965": {
+    "name": "DorkFi: nNV Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited Nautilus VOI in DorkFi community pool"
+  },
+  "48175031": {
+    "name": "DorkFi: nEV Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited enVOI in DorkFi community pool"
+  },
+  "48175113": {
+    "name": "DorkFi: nFV Receipt Token",
+    "protocol": "dorkfi",
+    "type": "ntoken",
+    "role": "receipt-token",
+    "description": "Receipt token representing deposited Fountain VOI in DorkFi community pool"
+  },
+  "47138068": {
+    "name": "WAD Stablecoin",
+    "protocol": "dorkfi",
+    "type": "arc200-token",
+    "role": "token-contract",
+    "description": "WAD stablecoin minted by DorkFi lending protocol, backed by overcollateralized deposits"
+  },
+  "8471125": {
+    "name": "BUIDL VOI (bVOI)",
+    "protocol": null,
+    "type": "liquid-staking",
+    "role": "token-contract",
+    "description": "BUIDL liquid staking VOI token representing staked VOI"
+  },
+  "8324600": {
+    "name": "Nautilus VOI (NV)",
+    "protocol": "nautilus",
+    "type": "liquid-staking",
+    "role": "token-contract",
+    "description": "Nautilus liquid staking VOI token representing staked VOI via Nautilus"
+  },
+  "828295": {
+    "name": "enVOI (EV)",
+    "protocol": "envoi",
+    "type": "liquid-staking",
+    "role": "token-contract",
+    "description": "enVoi liquid staking VOI token representing staked VOI via enVoi"
+  },
+  "770561": {
+    "name": "Fountain VOI (FV)",
+    "protocol": null,
+    "type": "liquid-staking",
+    "role": "token-contract",
+    "description": "Fountain liquid staking VOI token representing staked VOI via Fountain"
   }
 }

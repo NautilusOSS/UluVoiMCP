@@ -72,6 +72,7 @@ node index.js
 - **enVoi** — naming service
 - **Nautilus** — NFT marketplace
 - **HighForge** — NFT minting
+- **DorkFi** — lending protocol (deposits, borrowing, liquidations, WAD stablecoin)
 - **Aramid Bridge** — cross-chain bridge
 - **Kibisis** — browser wallet
 - **Voi Network** — L1 blockchain

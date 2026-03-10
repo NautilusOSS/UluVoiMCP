@@ -77,6 +77,18 @@
     "tags": ["wallet", "browser-extension"]
   },
   {
+    "id": "dorkfi",
+    "name": "DorkFi",
+    "type": "lending",
+    "description": "Decentralized lending protocol on Voi supporting deposits, borrowing, and liquidations across multiple collateral types. Uses a price oracle and dual-pool architecture with WAD stablecoin.",
+    "website": "https://dorkfi.com",
+    "tags": ["defi", "lending", "borrowing", "liquidation", "stablecoin"],
+    "contracts": {
+      "oracle": [47138065],
+      "pools": [47139778, 47139781]
+    }
+  },
+  {
     "id": "voi-network",
     "name": "Voi Network",
     "type": "l1-blockchain",

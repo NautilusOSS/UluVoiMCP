@@ -284,9 +284,9 @@
     "symbol": "WAD",
     "decimals": 6,
     "type": "arc200",
-    "protocol": null,
+    "protocol": "dorkfi",
     "category": "stablecoin",
-    "description": "Whale Asset Dollar stablecoin on Voi",
+    "description": "WAD stablecoin minted by DorkFi lending protocol, backed by overcollateralized deposits",
     "verified": true
   },
   "41403352": {
@@ -318,5 +318,45 @@
     "category": "community-token",
     "description": "GsAlfa token on Voi",
     "verified": false
+  },
+  "8471125": {
+    "name": "BUIDL VOI",
+    "symbol": "bVOI",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "liquid-staking",
+    "description": "BUIDL liquid staking token representing staked VOI",
+    "verified": true
+  },
+  "8324600": {
+    "name": "Nautilus VOI",
+    "symbol": "NV",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": "nautilus",
+    "category": "liquid-staking",
+    "description": "Nautilus liquid staking token representing staked VOI via Nautilus",
+    "verified": true
+  },
+  "828295": {
+    "name": "enVOI",
+    "symbol": "EV",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": "envoi",
+    "category": "liquid-staking",
+    "description": "enVoi liquid staking token representing staked VOI via enVoi",
+    "verified": true
+  },
+  "770561": {
+    "name": "Fountain VOI",
+    "symbol": "FV",
+    "decimals": 6,
+    "type": "arc200",
+    "protocol": null,
+    "category": "liquid-staking",
+    "description": "Fountain liquid staking token representing staked VOI via Fountain",
+    "verified": true
   }
 }
