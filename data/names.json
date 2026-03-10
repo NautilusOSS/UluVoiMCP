@@ -6,12 +6,15 @@
   },
   "names": {
     "shelly.voi": {
+      "address": "G3MSA75OZEJTCCENOJDLDJK7UD7E2K5DNC7FVHCNOV7E3I4DTXTOWDUIFQ",
       "description": "Shelly - Voi ecosystem builder"
     },
     "humble.voi": {
+      "address": "VVNPL3MM2XWE6XGVP6ILCQ5A6B5UFKAZMSKVLXMV5DQP75ODVZM3XCHGDA",
       "description": "HumbleSwap DEX protocol"
     },
     "nautilus.voi": {
+      "address": "GFFT7TUFCGDN4I6VUWVQKDB5JOI733U3JLP2YOVERQWMWL5IEZVU2D7U5A",
       "description": "Nautilus NFT marketplace"
     }
   }

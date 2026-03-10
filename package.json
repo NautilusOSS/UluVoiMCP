@@ -2,10 +2,15 @@
   "name": "ulu-voi-mcp",
   "version": "1.0.0",
   "description": "Voi ecosystem MCP server — protocol registry, application identification, asset identification, and naming resolution",
+  "license": "MIT",
   "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node --test test/*.test.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",

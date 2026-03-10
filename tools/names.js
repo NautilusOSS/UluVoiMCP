@@ -1,6 +1,8 @@
 import { z } from "zod";
-import { toolResult, toolError } from "../lib/errors.js";
-import { getNames } from "../lib/registry.js";
+import { toolResult, wrapHandler } from "../lib/errors.js";
+import { getNames, getReverseNames } from "../lib/registry.js";
+
+const DEFAULT_LIMIT = 50;
 
 function normalize(name) {
   let n = name.toLowerCase().trim();
@@ -17,7 +19,7 @@ export function registerNameTools(server) {
         .string()
         .describe("enVoi name to resolve (e.g. 'shelly.voi')"),
     },
-    async ({ name }) => {
+    wrapHandler(async ({ name }) => {
       const normalized = normalize(name);
       const registry = getNames();
       const entry = registry.names[normalized];
@@ -36,7 +38,7 @@ export function registerNameTools(server) {
         metadata: entry.metadata || {},
         source: "static-registry",
       });
-    },
+    }),
   );
 
   server.tool(
@@ -47,18 +49,10 @@ export function registerNameTools(server) {
         .string()
         .describe("Voi wallet address to reverse-resolve"),
     },
-    async ({ address }) => {
-      const registry = getNames();
-      const results = [];
-      for (const [name, entry] of Object.entries(registry.names)) {
-        if (entry.address && entry.address === address) {
-          results.push({
-            name,
-            description: entry.description || null,
-          });
-        }
-      }
-      if (results.length === 0) {
+    wrapHandler(async ({ address }) => {
+      const reverse = getReverseNames();
+      const entries = reverse[address];
+      if (!entries || entries.length === 0) {
         return toolResult({
           address,
           found: false,
@@ -69,10 +63,13 @@ export function registerNameTools(server) {
       return toolResult({
         address,
         found: true,
-        results,
+        results: entries.map((e) => ({
+          name: e.name,
+          description: e.description || null,
+        })),
         source: "static-registry",
       });
-    },
+    }),
   );
 
   server.tool(
@@ -82,8 +79,16 @@ export function registerNameTools(server) {
       pattern: z
         .string()
         .describe("Search pattern (substring match against registered names)"),
+      limit: z
+        .number()
+        .int()
+        .min(1)
+        .max(200)
+        .optional()
+        .describe(`Maximum results to return (default ${DEFAULT_LIMIT}, max 200)`),
     },
-    async ({ pattern }) => {
+    wrapHandler(async ({ pattern, limit }) => {
+      const cap = limit ?? DEFAULT_LIMIT;
       const registry = getNames();
       const lower = pattern.toLowerCase();
       const results = [];
@@ -94,17 +99,19 @@ export function registerNameTools(server) {
             address: entry.address || null,
             description: entry.description || null,
           });
+          if (results.length >= cap) break;
         }
       }
       return toolResult({
         pattern,
         results,
         totalCount: results.length,
+        limited: results.length >= cap,
         source: "static-registry",
         note: results.length === 0
           ? "No matches in static registry. Use UluCoreMCP envoi_search for live search."
           : undefined,
       });
-    },
+    }),
   );
 }

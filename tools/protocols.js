@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { toolResult, toolError } from "../lib/errors.js";
+import { toolResult, toolError, wrapHandler } from "../lib/errors.js";
 import {
   getProtocols,
   findProtocol,
@@ -17,7 +17,7 @@ export function registerProtocolTools(server) {
         .optional()
         .describe("Filter by protocol type (dex, bridge, naming-service, nft-marketplace, etc.)"),
     },
-    async ({ type }) => {
+    wrapHandler(async ({ type }) => {
       let list = getProtocols();
       if (type) {
         list = list.filter((p) => p.type === type);
@@ -32,7 +32,7 @@ export function registerProtocolTools(server) {
           tags: p.tags,
         })),
       );
-    },
+    }),
   );
 
   server.tool(
@@ -43,13 +43,13 @@ export function registerProtocolTools(server) {
         .string()
         .describe("Protocol identifier (e.g. humble-swap, envoi, aramid-bridge)"),
     },
-    async ({ protocolId }) => {
+    wrapHandler(async ({ protocolId }) => {
       const protocol = findProtocol(protocolId);
       if (!protocol) {
         return toolError(`Unknown protocol: ${protocolId}`);
       }
       return toolResult(protocol);
-    },
+    }),
   );
 
   server.tool(
@@ -60,7 +60,7 @@ export function registerProtocolTools(server) {
         .string()
         .describe("Protocol identifier (e.g. humble-swap, envoi, aramid-bridge)"),
     },
-    async ({ protocolId }) => {
+    wrapHandler(async ({ protocolId }) => {
       const protocol = findProtocol(protocolId);
       if (!protocol) {
         return toolError(`Unknown protocol: ${protocolId}`);
@@ -73,7 +73,7 @@ export function registerProtocolTools(server) {
         contracts,
         assets,
       });
-    },
+    }),
   );
 
   server.tool(
@@ -84,7 +84,7 @@ export function registerProtocolTools(server) {
         .string()
         .describe("Protocol identifier (e.g. humble-swap, envoi, aramid-bridge)"),
     },
-    async ({ protocolId }) => {
+    wrapHandler(async ({ protocolId }) => {
       const protocol = findProtocol(protocolId);
       if (!protocol) {
         return toolError(`Unknown protocol: ${protocolId}`);
@@ -129,6 +129,6 @@ export function registerProtocolTools(server) {
       lines.push(``, `**Tags:** ${(protocol.tags || []).join(", ")}`);
 
       return { content: [{ type: "text", text: lines.join("\n") }] };
-    },
+    }),
   );
 }

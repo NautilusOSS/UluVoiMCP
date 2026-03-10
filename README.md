@@ -23,10 +23,11 @@ Core returns facts. Voi returns meaning.
 | `get_protocol_summary` | Human-readable protocol summary |
 | `identify_application` | Identify what a Voi application ID is |
 | `identify_asset` | Identify what a Voi asset ID is |
+| `search_assets` | Search known assets by symbol, category, protocol, or verified status |
 | `get_contract_role` | Get the role and purpose of a contract |
 | `resolve_name` | Resolve an enVoi name from static registry |
 | `reverse_resolve_address` | Reverse-resolve an address to known names |
-| `search_names` | Search the name registry by pattern |
+| `search_names` | Search the name registry by pattern (with result limit) |
 
 ## Data Model
 

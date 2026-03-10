@@ -1,6 +1,34 @@
 import { z } from "zod";
-import { toolResult, toolError } from "../lib/errors.js";
-import { findApplication, findAsset, findProtocol } from "../lib/registry.js";
+import { toolResult, wrapHandler } from "../lib/errors.js";
+import {
+  findApplication,
+  findAsset,
+  findProtocol,
+  getAssets,
+} from "../lib/registry.js";
+
+function resolveApp(appId) {
+  const app = findApplication(appId);
+  if (!app) {
+    return {
+      appId,
+      known: false,
+      message: `Application ${appId} is not in the Voi ecosystem registry`,
+    };
+  }
+  const protocol = app.protocol ? findProtocol(app.protocol) : null;
+  return {
+    appId,
+    known: true,
+    name: app.name,
+    protocol: app.protocol,
+    protocolName: protocol?.name || null,
+    type: app.type,
+    role: app.role,
+    description: app.description,
+    tokens: app.tokens || null,
+  };
+}
 
 export function registerIdentifyTools(server) {
   server.tool(
@@ -12,28 +40,9 @@ export function registerIdentifyTools(server) {
         .int()
         .describe("Application ID on Voi"),
     },
-    async ({ appId }) => {
-      const app = findApplication(appId);
-      if (!app) {
-        return toolResult({
-          appId,
-          known: false,
-          message: `Application ${appId} is not in the Voi ecosystem registry`,
-        });
-      }
-      const protocol = app.protocol ? findProtocol(app.protocol) : null;
-      return toolResult({
-        appId,
-        known: true,
-        name: app.name,
-        protocol: app.protocol,
-        protocolName: protocol?.name || null,
-        type: app.type,
-        role: app.role,
-        description: app.description,
-        tokens: app.tokens || null,
-      });
-    },
+    wrapHandler(async ({ appId }) => {
+      return toolResult(resolveApp(appId));
+    }),
   );
 
   server.tool(
@@ -45,7 +54,7 @@ export function registerIdentifyTools(server) {
         .int()
         .describe("Asset or ARC-200 contract ID on Voi"),
     },
-    async ({ assetId }) => {
+    wrapHandler(async ({ assetId }) => {
       const asset = findAsset(assetId);
       if (!asset) {
         return toolResult({
@@ -68,7 +77,7 @@ export function registerIdentifyTools(server) {
         description: asset.description,
         verified: asset.verified,
       });
-    },
+    }),
   );
 
   server.tool(
@@ -80,27 +89,56 @@ export function registerIdentifyTools(server) {
         .int()
         .describe("Application ID on Voi"),
     },
-    async ({ appId }) => {
-      const app = findApplication(appId);
-      if (!app) {
-        return toolResult({
-          appId,
-          known: false,
-          role: null,
-          message: `Contract ${appId} is not in the Voi ecosystem registry`,
+    wrapHandler(async ({ appId }) => {
+      const resolved = resolveApp(appId);
+      if (!resolved.known) {
+        resolved.role = null;
+      }
+      return toolResult(resolved);
+    }),
+  );
+
+  server.tool(
+    "search_assets",
+    "Search known Voi assets by symbol, category, or protocol",
+    {
+      symbol: z
+        .string()
+        .optional()
+        .describe("Filter by token symbol (e.g. VOI, USDC, SHELLY)"),
+      category: z
+        .string()
+        .optional()
+        .describe("Filter by category (e.g. native, bridged-token, community-token, stablecoin, liquid-staking)"),
+      protocol: z
+        .string()
+        .optional()
+        .describe("Filter by protocol ID (e.g. aramid-bridge, dorkfi)"),
+      verified: z
+        .boolean()
+        .optional()
+        .describe("Filter by verification status"),
+    },
+    wrapHandler(async ({ symbol, category, protocol, verified }) => {
+      const all = getAssets();
+      const results = [];
+      for (const [assetId, info] of Object.entries(all)) {
+        if (symbol && info.symbol?.toLowerCase() !== symbol.toLowerCase()) continue;
+        if (category && info.category !== category) continue;
+        if (protocol && info.protocol !== protocol) continue;
+        if (verified !== undefined && info.verified !== verified) continue;
+        results.push({
+          assetId: Number(assetId),
+          name: info.name,
+          symbol: info.symbol,
+          decimals: info.decimals,
+          type: info.type,
+          protocol: info.protocol,
+          category: info.category,
+          verified: info.verified,
         });
       }
-      const protocol = app.protocol ? findProtocol(app.protocol) : null;
-      return toolResult({
-        appId,
-        known: true,
-        role: app.role,
-        type: app.type,
-        name: app.name,
-        protocol: app.protocol,
-        protocolName: protocol?.name || null,
-        description: app.description,
-      });
-    },
+      return toolResult({ results, totalCount: results.length });
+    }),
   );
 }
