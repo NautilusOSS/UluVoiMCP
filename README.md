@@ -74,6 +74,7 @@ node index.js
 - **HighForge** — NFT minting
 - **DorkFi** — lending protocol (deposits, borrowing, liquidations, WAD stablecoin)
 - **Aramid Bridge** — cross-chain bridge
+- **NFT Navigator (Mimir)** — indexer (ARC-200 tokens, ARC-72 NFTs, marketplace, DEX pools)
 - **Kibisis** — browser wallet
 - **Voi Network** — L1 blockchain
 

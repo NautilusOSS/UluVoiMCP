@@ -89,6 +89,15 @@
     }
   },
   {
+    "id": "nft-navigator",
+    "name": "NFT Navigator (Mimir)",
+    "type": "indexer",
+    "description": "Indexer and API service for the Voi ecosystem. Indexes ARC-200 fungible tokens, ARC-72 NFTs, NFT marketplace listings and sales, and DEX liquidity pools across Humble Swap and Nomadex.",
+    "website": "https://nftnavigator.xyz",
+    "tags": ["indexer", "nft", "tokens", "marketplace", "api"],
+    "api": "https://voi-mainnet-mimirapi.nftnavigator.xyz"
+  },
+  {
     "id": "voi-network",
     "name": "Voi Network",
     "type": "l1-blockchain",
